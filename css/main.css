@@ -1,0 +1,434 @@
+/*============== GENERALES ============*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: #e9ebee;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 18px;
+    padding: 2px;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+input[type=radio] {
+    width: auto;
+}
+
+textarea {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+span {
+    color: #be4b49;
+}
+
+.requerido {
+    color: #be4b49;
+    margin-top: 7px;
+    font-size: 90%;
+}
+
+.contenedor {
+    margin: 0 auto;
+    width: 1068px;
+}
+
+/*============== NAVBAR ============*/
+
+.navbar {
+    background-color: #4267b2;
+    overflow: auto;
+    margin-left: -306px;
+    margin-right: -306px;
+}
+
+.navbar ul {
+    float: right;
+    margin: 10px;
+    padding: 5px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    color: white;
+    padding: 8px 16px;
+}
+
+.navbar ul li a:hover {
+    background-color: #23385f;
+}
+
+/* BÚSQUEDA */
+
+.navbar .busquedaGlobal {
+    margin: 10px;
+    margin-left: 70px;
+    margin-top: 15px;
+    width: 60%;
+    background-color: #4267b2;
+}
+
+.navbar .busquedaGlobal input[type=text] {
+    border-radius: 6px;
+    width: 250px;
+    padding: 2px 6px;
+}
+
+.navbar .busquedaGlobal input[type=submit] {
+    background-color: #e9ebee;
+    color: #23385f;
+    border: none;
+    border-radius: 3px;
+    margin: 5px 5px 5px 5px;
+    padding: 3px 3px 3px 3px;
+    width: auto;
+}
+
+.navbar .busquedaGlobal input[type=submit]:hover {
+    background-color: #23385f;
+    color: white;
+}
+
+.navbar .busquedaGlobal select {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0.9px 0px;
+    vertical-align: -1px;
+}
+
+/*============== POSTS ============*/
+
+.post, .crearPost {
+    background-color: white;
+    box-shadow: 0 0 5px #4267b2;
+    margin: auto;
+    width: 650px;
+    padding: 10px 16px;
+    overflow: auto;
+}
+
+/* Crear Posts */
+
+.crearPostBotones {
+    width: 50%;
+    margin: auto;
+    overflow: auto;
+}
+
+.crearPostBotones img {
+    display: inline-block;
+    width: 42px;
+    height: 29px;
+    margin-top: 4px;
+}
+
+.crearPostBotones label {
+    cursor: pointer;
+}
+
+.crearPostBotones input[type="file"] {
+    display: none;
+}
+
+.crearPostBotones input[type=submit] {
+    width: 86%;
+    float: right;
+    background-color: #4267b2;
+}
+
+.crearPostBotones input[type=submit]:hover {
+    background-color: #23385f;
+}
+
+/* Post */
+
+.post .publico {
+    float: right;
+    text-align: center;
+    width: auto;
+}
+
+/*============== FUENTES Y LINKS ============*/
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #23385f;
+    font-weight: normal;
+    text-align: center;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #23385f;
+    font-weight: normal;
+    font-size: 105%;
+    margin-bottom: 0;
+}
+
+h3, a.linkPerfil {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #23385f;
+    font-weight: normal;
+    font-size: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: 12px;
+    text-decoration: none;
+}
+
+a.linkPerfil:hover {
+    text-decoration: underline;
+}
+
+/* LINEA PARA DIVIDIR LOS TITULOS */
+
+hr {
+    margin-bottom: 30px;
+    margin-top: 0px;
+    border-color: #23385f;
+}
+
+/*============== TABS ============*/
+
+div.tab {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+div.tab button {
+    background-color: #4267b2;
+    border: none;
+    outline: none;
+    color: white;
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+    width: 50%;
+}
+
+div.tab button:hover {
+    background-color: #314e85;
+}
+
+/*============== TABS POR DEFECTO ============*/
+
+div.tab button.active {
+    background-color: #23385f;
+}
+
+/*============== BOTONES DE ENVÍO ============*/
+
+input[type=submit] {
+    color: white;
+    cursor: pointer;
+    background-color: #23385f;
+    border: none;
+    padding: 8px;
+}
+
+.contenedor input[type=submit] {
+    background-color: #4267b2;
+}
+
+.contenedor input[type=submit]:hover {
+    background-color: #23385f;
+}
+
+/*============= ESTILOS ESPECIFICOS DE BOTONES ========*/
+
+input[type=checkbox] {
+    width: fit-content;
+}
+
+/*============= CUADRO DE AMIGOS ========*/
+
+.frame {
+    width: 200px;
+    display: inline-block;
+    box-shadow: 0 0 5px #4267b2;
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+/*============= SUB CONTENEDORES ========*/
+
+.queryUsuario {
+    background-color: white;
+    box-shadow: 0 0 5px #4267b2;
+    margin: auto;
+    width: 320px;
+    padding: 20px 20px 0px 20px;
+    overflow: auto;
+    text-align: center;
+}
+
+.queryUsuario a {
+    text-decoration: none;
+}
+
+.queryUsuario a:hover {
+    text-decoration: underline;
+}
+
+/*============= BOTONES DESHABILITADOS ========*/
+
+input:disabled {
+    cursor: auto;
+}
+
+#special:hover {
+    background-color: #4267b2;
+}
+
+@media screen and (max-width: 1600px) {
+    /* Esto se hace como un "IF" para definir tamaños o valores diferentes según el tamaño de la pantalla */
+    .contenedor {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .navbar {
+        margin-left: -46px;
+        margin-right: -46px;
+    }
+    .navbar ul {
+        margin: 0px 0px 0px 60px;
+        padding: 0px;
+    }
+    .navbar ul li {
+        margin-left: 35px;
+    }
+   
+    .navbar ul li a {
+        display: inline-block;
+        color: white;
+        padding: 0px 0px;
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+    }
+    /* BÚSQUEDA */
+    .navbar .busquedaGlobal {
+        margin: 10px;
+        margin-left: 70px;
+        margin-top: 15px;
+        width: 60%;
+        background-color: #4267b2;
+    }
+    
+    .navbar .busquedaGlobal input[type=text] {
+        border-radius: 6px;
+        width: 20px;
+        padding: 2px 6px;
+    }
+    
+    .navbar .busquedaGlobal input[type=submit] {
+        background-color: #e9ebee;
+        color: #23385f;
+        border: none;
+        border-radius: 3px;
+        margin: 5px 5px 5px 5px;
+        padding: 3px 3px 3px 3px;
+        width: auto;
+    }
+    #buscar {
+        width: 80%;
+    }
+    .crearPost {
+        margin-left: 10%;
+    }
+    .post {
+        width: 47%;
+        margin-left: 10%;
+        margin-right: 30%;
+    }
+    .perfil {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Esto se hace como un "IF" para definir tamaños o valores diferentes según el tamaño de la pantalla */
+    .contenedor {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .navbar {
+        overflow: auto;
+        border-radius: 10px;
+        height: 5%;
+    }
+    .navbar ul {
+        float: right;
+        margin: 10px 0px 0px 60px;
+        padding: 0px;
+    }
+    .navbar ul li {
+        display: inline;
+        float: left;
+        width: 10%;
+        height: 50%;
+        margin-left: 35px;
+    }
+    .navbar ul li a:hover {
+        background-color: #0f470b;
+    }
+    .navbar ul li a {
+        display: inline-block;
+        color: white;
+        padding: 0px 0px;
+        width: 100%;
+        height: 100%;
+        font-size: 60%;
+    }
+    /* BÚSQUEDA */
+    .navbar .busquedaGlobal {
+        margin: 0;
+        width: 10%;
+        height: 5%;
+    }
+    #buscar {
+        width: 80%;
+    }
+    .crearPost {
+        margin-left: 10%;
+        width: 80%;
+    }
+    .post {
+        float: right;
+        width: 35%;
+        box-sizing: border-box;
+        /* Este renglón hace que el borde se incluya en el tamaño total de la división */
+    }
+    .perfil {
+        width: 5%;
+        box-sizing: border-box;
+        /* Este renglón hace que el borde se incluya en el tamaño total de la división */
+    }
+}
